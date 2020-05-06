@@ -1,0 +1,523 @@
+<html>
+
+<head>
+    <!-- Required Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Labels | Winebel</title>
+    <meta name=”description” content=”Winebel”>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+
+    <!-- Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="dashboard-page bg-primary-1">
+    <main class="main-wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.webp" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto language-menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EN
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:void(0);">DE</a>
+                                <a class="dropdown-item" href="javascript:void(0);">IT</a>
+                                <a class="dropdown-item" href="javascript:void(0);">FR</a>
+                                <a class="dropdown-item" href="javascript:void(0);">SP</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row no-gutters dashboard">
+                    <div class="col-1 sidebar">
+                        <div class="user">
+                            <span>e</span>
+                            <!--<img src="" class="img-fluid">-->
+                        </div>
+                        <ul class="nav flex-column">
+                            <li>
+                                <a href="upload-label.html">
+                                    <i class="ti-plus"></i>
+                                </a>
+                                <span class="menu-item">Upload Label</span>
+                            </li>
+                            <li>
+                                <a href="my-labels.html" class="active">
+                                    <i class="ti-layout-width-default"></i>
+                                </a>
+                                <span class="menu-item">My Labels</span>
+                            </li>
+                            <li>
+                                <a href="user-profile.html">
+                                    <i class="ti-user"></i>
+                                </a>
+                                <span class="menu-item">User Profile</span>
+                            </li>
+                            <li>
+                                <a href="change-password.html">
+                                    <i class="ti-lock"></i>
+                                </a>
+                                <span class="menu-item">Change Password</span>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column mt-auto">
+                            <li>
+                                <a href="index.html">
+                                    <i class="ti-power-off"></i>
+                                </a>
+                                <span class="menu-item">Log Out</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-11 p-5">
+                        <div class="card border-0 rounded-0 h-100">
+                            <div class="card-body">
+                                <h3 class="h3 mb-5 pb-3 border-bottom">
+                                    <i class="ti-layout-width-default"></i> My Labels
+                                </h3>
+                                <div class="row">
+                                    <!--<div class="col-md-4">
+                                    <img src="images/label.webp" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <th>Label Name</th>
+                                            <td>etc001</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Status</th>
+                                            <td>Review</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Action</th>
+                                            <td>
+                                                <button class="btn btn-sm btn-primary-1 rounded-pill px-3" data-toggle="modal" data-target="#confirmRemove">Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">
+                                                BOTTLES PER YEAR
+                                                <select class="form-control form-control-sm my-3">
+                                                    <option value="BASIC (5.000 BOTTIGLIE)">BASIC (5.000 BOTTIGLIE) €600,00 EUR</option>
+                                                    <option value="STANDARD (10.000 BOTTIGLIE)">STANDARD (10.000 BOTTIGLIE) €750,00 EUR</option>
+                                                    <option value="ADVANCED PACKAGE (50.000 BOTTIGLIE)">ADVANCED PACKAGE (50.000 BOTTIGLIE) €1.000,00 EUR</option>
+                                                    <option value="PROFESSIONALE (100.000 BOTTIGLIE)">PROFESSIONALE (100.000 BOTTIGLIE) €1.700,00 EUR</option>
+                                                </select>
+                                                <img src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_buynowCC_LG.gif" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </div>-->
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered text-nowrap">
+                                                <tr>
+                                                    <th>Label</th>
+                                                    <th>Label Name</th>
+                                                    <th>Button 1</th>
+                                                    <th>Button 2</th>
+                                                    <th>Button 3</th>
+                                                    <th>Button 4</th>
+                                                    <th>Video 1</th>
+                                                    <th>Video 2</th>
+                                                    <th>Video 3</th>
+                                                    <th>Video 4</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/label.webp" class="img-fluid">
+                                                    </td>
+                                                    <td>etc001</td>
+                                                    <td>Wine</td>
+                                                    <td>Winery</td>
+                                                    <td>Food</td>
+                                                    <td>Testing</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            001.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            002.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            003.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            004.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Review</td>
+                                                    <td class="text-center">
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#editModal"><i class="ti-pencil-alt"></i></button>
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#confirmModal"><i class="ti-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/label.webp" class="img-fluid">
+                                                    </td>
+                                                    <td>etc001</td>
+                                                    <td>Wine</td>
+                                                    <td>Winery</td>
+                                                    <td>Food</td>
+                                                    <td>Testing</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            001.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            002.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            003.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            004.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Review</td>
+                                                    <td class="text-center">
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#editModal"><i class="ti-pencil-alt"></i></button>
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#confirmModal"><i class="ti-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/label.webp" class="img-fluid">
+                                                    </td>
+                                                    <td>etc001</td>
+                                                    <td>Wine</td>
+                                                    <td>Winery</td>
+                                                    <td>Food</td>
+                                                    <td>Testing</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            001.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            002.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            003.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            004.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Review</td>
+                                                    <td class="text-center">
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#editModal"><i class="ti-pencil-alt"></i></button>
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#confirmModal"><i class="ti-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/label.webp" class="img-fluid">
+                                                    </td>
+                                                    <td>etc001</td>
+                                                    <td>Wine</td>
+                                                    <td>Winery</td>
+                                                    <td>Food</td>
+                                                    <td>Testing</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            001.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            002.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            003.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            004.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Review</td>
+                                                    <td class="text-center">
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#editModal"><i class="ti-pencil-alt"></i></button>
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#confirmModal"><i class="ti-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/label.webp" class="img-fluid">
+                                                    </td>
+                                                    <td>etc001</td>
+                                                    <td>Wine</td>
+                                                    <td>Winery</td>
+                                                    <td>Food</td>
+                                                    <td>Testing</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            001.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            002.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            003.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#videoModal" class="video-link">
+                                                            <span data-toggle="tooltip" data-placement="bottom" title="Watch Video">
+                                                            004.mp4
+                                                        </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Review</td>
+                                                    <td class="text-center">
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#editModal"><i class="ti-pencil-alt"></i></button>
+                                                        <button class="btn px-1" data-toggle="modal" data-target="#confirmModal"><i class="ti-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <video width="100%" controls>
+                                    <source src="" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body text-center">
+                                    <p>Do you really want to remove this label? This action can not be undone.</p>
+                                    <button type="button" class="btn btn-sm btn-primary-1 rounded-pill px-3">Yes, Remove this label</button>
+                                    <button type="button" class="btn btn-sm btn-secondary rounded-pill px-3" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h4 class="h4">Edit My Label</h4>
+                                    <form>
+                                        <div class="form-group row no-gutters">
+                                            <label class="col-sm-4 col-form-label">Label</label>
+                                            <div class="col-sm-8">
+                                                <input type="file" hidden>
+                                                <div class="type-file">
+                                                    No file Choosen
+                                                </div>
+                                                <i class="ti-image"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label for="labelName" class="col-sm-4 col-form-label">Label Name</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder="Label Name" name="labelname" id="labelName" value="etc001">
+                                                <i class="ti-text"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label for="button1" class="col-sm-4 col-form-label">Button 1</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder="Button 1" name="button1" id="button1" value="Wine">
+                                                <i class="ti-hand-point-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label class="col-sm-4 col-form-label">Video 1</label>
+                                            <div class="col-sm-8">
+                                                <input type="file" hidden value="001.mp4">
+                                                <div class="type-file">
+                                                    No file Choosen
+                                                </div>
+                                                <i class="ti-video-camera"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label for="button2" class="col-sm-4 col-form-label">Button 2</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder="Button 2" name="button2" id="button2" value="Winery">
+                                                <i class="ti-hand-point-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label class="col-sm-4 col-form-label">Video 2</label>
+                                            <div class="col-sm-8">
+                                                <input type="file" hidden value="002.mp4">
+                                                <div class="type-file">
+                                                    No file Choosen
+                                                </div>
+                                                <i class="ti-video-camera"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label for="button3" class="col-sm-4 col-form-label">Button 3</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder="Button 3" name="button3" id="button3" value="Food">
+                                                <i class="ti-hand-point-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label class="col-sm-4 col-form-label">Video 3</label>
+                                            <div class="col-sm-8">
+                                                <input type="file" hidden value="003.mp4">
+                                                <div class="type-file">
+                                                    No file Choosen
+                                                </div>
+                                                <i class="ti-video-camera"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label for="button4" class="col-sm-4 col-form-label">Button 4</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder="Button 4" name="button4" id="button4" value="Testing">
+                                                <i class="ti-hand-point-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label class="col-sm-4 col-form-label">Video 4</label>
+                                            <div class="col-sm-8">
+                                                <input type="file" hidden value="004.mp4">
+                                                <div class="type-file">
+                                                    No file Choosen
+                                                </div>
+                                                <i class="ti-video-camera"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row no-gutters">
+                                            <label class="col-sm-4 col-form-label">Status</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control">
+                                                <option>Active</option>
+                                                <option selected>Review</option>
+                                            </select>
+                                                <i class="ti-list"></i>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-sm btn-primary-1 rounded-pill px-3">Save</button>
+                                            <button type="button" class="btn btn-sm btn-secondary rounded-pill px-3" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

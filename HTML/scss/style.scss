@@ -1,0 +1,299 @@
+@import "bootstrap/bootstrap";
+// Custom CSS
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+$primary-1: #930332;
+.bg-primary-1 {
+    background-color: $primary-1;
+}
+
+.btn-primary-1 {
+    background-color: $primary-1;
+    color: $white;
+}
+
+.btn {
+    box-shadow: 0 0 0 !important;
+}
+
+.form-group {
+    margin-bottom: 3rem;
+    position: relative;
+    .form-control {
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid #ced4da;
+        box-shadow: 0 0 0;
+        margin-bottom: 0.5rem;
+        padding-left: 32px;
+    }
+    i {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+    .show-password {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+    }
+    .type-file {
+        height: calc(1.5em + .75rem + 2px);
+        width: 100%;
+        border-bottom: 1px solid #ced4da;
+        padding: .375rem .75rem;
+        padding-left: 32px;
+        font-style: italic;
+        cursor: pointer;
+    }
+}
+
+.language-menu {
+    .dropdown {
+        background: #0e1e27;
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+        .dropdown-menu {
+            min-width: unset;
+            width: fit-content;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            background: #0e1e27;
+            a {
+                color: $white;
+                padding: 7px;
+                &:hover {
+                    background: transparent;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.user-page {
+    background-image: #0e1e27 url(../images/wine-bottles.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .user-form {
+        border-radius: 15px;
+        overflow: hidden;
+        min-height: 70vh;
+        margin: 10vh 0;
+        p {
+            line-height: 1.75em;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            a {
+                color: $primary-1;
+            }
+        }
+    }
+}
+
+.dashboard-page {
+    .dashboard {
+        border-radius: 15px;
+        background: $white;
+        min-height: 70vh;
+        margin: 10vh 0;
+        .h3 {
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid;
+            i {
+                font-size: 80%;
+                margin-right: 0.25rem;
+            }
+        }
+        .h4 {
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #dee2e6;
+            i {
+                font-size: 80%;
+                margin-right: 0.25rem;
+            }
+        }
+        .sidebar {
+            background: #e8647a0c;
+            display: flex;
+            flex-direction: column;
+            .user {
+                font-size: 28px;
+                font-weight: 700;
+                border-radius: 50%;
+                background: #93033208;
+                border: 3px solid #93033211;
+                line-height: 28px;
+                text-transform: uppercase;
+                height: 50px;
+                width: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1rem;
+                color: #930332;
+                overflow: hidden;
+            }
+            ul {
+                margin: 1rem 0;
+                li {
+                    margin: 0.5rem 0;
+                    text-align: center;
+                    width: 100%;
+                    position: relative;
+                    a {
+                        color: $primary-1;
+                        font-size: 28px;
+                        display: block;
+                        padding: 0.5rem 0;
+                        &.active {
+                            background: #93033208;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            right: 0;
+                            height: 0;
+                            width: 3px;
+                            background: #930332;
+                            transition: 0.15s all;
+                        }
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            right: 0;
+                            height: 0;
+                            width: 3px;
+                            background: #930332;
+                            transition: 0.15s all;
+                        }
+                        &.active:before,
+                        &.active:after,
+                        &:hover:before,
+                        &:hover:after {
+                            height: 100%;
+                        }
+                    }
+                    .menu-item {
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #930332aa;
+                        padding: 0 1rem;
+                        color: #fff;
+                        font-weight: 700;
+                        z-index: 1030;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        white-space: nowrap;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: 0.3s all;
+                    }
+                    &:hover .menu-item {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+            &.right {
+                padding: 3rem;
+                p {
+                    color: #930332aa;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+        .table-responsive {
+            &::-webkit-scrollbar {
+                height: 10px;
+                width: 10px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #e8647a33;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #930332aa;
+                &:hover {
+                    background: #930332;
+                }
+            }
+            .table {
+                text-align: center;
+                td {
+                    vertical-align: middle !important;
+                    .video-link {
+                        color: #212529;
+                        border-bottom: 1px dotted;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100px;
+        background-color: $white;
+    }
+}
+
+.modal-dialog {
+    margin-top: 20vh !important;
+}
+
+@include media-breakpoint-up(lg) {
+    .user-page {
+        .user-form {
+            .card-body {
+                width: 75%;
+                margin: auto;
+            }
+        }
+    }
+}

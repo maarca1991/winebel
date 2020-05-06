@@ -1,0 +1,58 @@
+RewriteOptions inherit
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+
+RewriteRule ^404/?$ 404.php [NC,L]
+
+RewriteRule ^apanel/?$ apanel/index.php [NC,L]
+RewriteRule ^index/?$ index.php [NC,L]
+
+RewriteRule ^process-login/?$ process_login.php [NC,L]
+RewriteRule ^logout/?$ logout.php [NC,L]
+
+RewriteRule ^forgot-password/?$ forgot_password.php [NC,L]
+RewriteRule ^process-forget-pass/?$ process_forget_password.php [NC,L]
+
+RewriteRule ^set-new-password/([0-9]+)/([A-Za-z0-9-_]+)/?$ set_new_password.php?id=$1&slug=$2 [NC,L]
+RewriteRule ^process-set-new-password/?$ process_set_new_password.php [NC,L]
+
+RewriteRule ^dashboard/?$ dashboard.php [NC,L]
+RewriteRule ^my-account/?$ my_account.php [NC,L]
+
+
+## User ##
+RewriteRule ^manage-user/?$ manage_user.php [NC,L]
+RewriteRule ^add-user/([A-Za-z0-9-_]+)/?$ add_user.php?mode=$1 [NC,L]
+RewriteRule ^add-user/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_user.php?mode=$1&id=$2 [NC,L]
+RewriteRule ^view-user/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ view_user.php?mode=$1&id=$2 [NC,L]
+
+## User ##
+RewriteRule ^manage-labels/?$ manage_labels.php [NC,L]
+RewriteRule ^add-labels/([A-Za-z0-9-_]+)/?$ add_labels.php?mode=$1 [NC,L]
+RewriteRule ^add-labels/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_labels.php?mode=$1&id=$2 [NC,L]
+RewriteRule ^view-labels/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ view_labels.php?mode=$1&id=$2 [NC,L]
+
+## About us ##
+RewriteRule ^manage-about/?$ manage_about.php [NC,L]
+RewriteRule ^add-about/([A-Za-z0-9-_]+)/?$ add_about.php?mode=$1 [NC,L]
+RewriteRule ^add-about/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_about.php?mode=$1&id=$2 [NC,L]
+
+## CONTACT US ##
+RewriteRule ^manage-contact/?$ manage_contact.php [NC,L]
+RewriteRule ^add-contact/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_contact.php?mode=$1&id=$2 [NC,L]
+
+## Contact ##
+RewriteRule ^view_contact/?$ view_contact.php [NC,L]
+
+## Manage Subscription ##
+RewriteRule ^manage-subscriber/?$ manage_subscriber.php [NC,L]
+RewriteRule ^add-subscriber/([A-Za-z0-9-_]+)/?$ add_subscriber.php?mode=$1 [NC,L]
+RewriteRule ^add-subscriber/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_subscriber.php?mode=$1&id=$2 [NC,L]
+
+## Order ##
+RewriteRule ^manage-order/?$ manage_order.php [NC,L]
+RewriteRule ^add-order/([A-Za-z0-9-_]+)/?$ add_order.php?mode=$1 [NC,L]
+RewriteRule ^add-order/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_order.php?mode=$1&id=$2 [NC,L]
+RewriteRule ^view-order/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ view_order.php?mode=$1&id=$2 [NC,L]

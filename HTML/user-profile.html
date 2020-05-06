@@ -1,0 +1,146 @@
+<html>
+<head>
+    <!-- Required Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Profile | Winebel</title>
+    <meta name=”description” content=”Winebel”>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+
+    <!-- Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body class="dashboard-page bg-primary-1">
+<main class="main-wrapper">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.webp" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto language-menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EN
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="javascript:void(0);">DE</a>
+                            <a class="dropdown-item" href="javascript:void(0);">IT</a>
+                            <a class="dropdown-item" href="javascript:void(0);">FR</a>
+                            <a class="dropdown-item" href="javascript:void(0);">SP</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row no-gutters dashboard">
+                <div class="col-1 sidebar">
+                    <div class="user">
+                        <span>e</span>
+                        <!--<img src="" class="img-fluid">-->
+                    </div>
+                    <ul class="nav flex-column">
+                        <li>
+                            <a href="upload-label.html">
+                                <i class="ti-plus"></i>
+                            </a>
+                            <span class="menu-item">Upload Label</span>
+                        </li>
+                        <li>
+                            <a href="my-labels.html">
+                                <i class="ti-layout-width-default"></i>
+                            </a>
+                            <span class="menu-item">My Labels</span>
+                        </li>
+                        <li>
+                            <a href="user-profile.html" class="active">
+                                <i class="ti-user"></i>
+                            </a>
+                            <span class="menu-item">User Profile</span>
+                        </li>
+                        <li>
+                            <a href="change-password.html">
+                                <i class="ti-lock"></i>
+                            </a>
+                            <span class="menu-item">Change Password</span>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column mt-auto">
+                        <li>
+                            <a href="index.html">
+                                <i class="ti-power-off"></i>
+                            </a>
+                            <span class="menu-item">Log Out</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8 p-5">
+                    <div class="card border-0 rounded-0 h-100">
+                        <div class="card-body">
+                            <h3 class="h3 mb-5 pb-3 border-bottom">
+                                <i class="ti-user"></i>
+                                User Profile
+                            </h3>
+                            <form>
+                                <div class="form-group row no-gutters">
+                                    <label for="username" class="col-sm-4 col-form-label">Username</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" placeholder="Username" name="username" id="username" value="essegi">
+                                        <i class="ti-user"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group row no-gutters">
+                                    <label for="email" class="col-sm-4 col-form-label">Email</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Email" name="email" id="email" value="essegi@gmail.com">
+                                        <i class="ti-email"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group row no-gutters justify-content-end">
+                                    <div class="col-sm-8">
+                                        <button class="btn btn-primary-1 btn-lg btn-block rounded-pill px-5">Update Profile</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 right sidebar">
+                    <h4 class="h4">
+                        Lorem Ipsum
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aliquid animi, aperiam aspernatur cumque deleniti distinctio eos, laboriosam minima nobis odio perferendis praesentium vel veritatis voluptates? Dolorem earum quasi sit!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
