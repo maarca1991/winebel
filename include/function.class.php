@@ -11,15 +11,9 @@ class Functions
 	/** Live Database Detail **/
 		
 	protected $db_host = "localhost";
-	protected $db_user = "devlofzz_winebel";
-	protected $db_pass = "winebel@123";
-	protected $db_name = "devlofzz_winebel";
-
-	//For Client Server
-	// protected $db_host = "localhost";
-	// protected $db_user = "winebel8_wine";
-	// protected $db_pass = "_s52(GHmav^m";
-	// protected $db_name = "winebel8_winebell";
+	protected $db_user = "";
+	protected $db_pass = "";
+	protected $db_name = "";
 	
 	protected $con = false; 
 	public $myconn; 
