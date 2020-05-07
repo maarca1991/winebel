@@ -8,12 +8,7 @@
 	}
 	else 
 	{
-	    $SITEURL = 'http://winebel.com/';
-	    $ADMINURL = 'http://winebel.com/apanel/';
-
-	    //Client Server
-	    //$SITEURL = 'https://www.winebel.com/';
-	    //$ADMINURL = 'https://www.winebel.com/apanel/';
+	  
 	}       
 
 define('SITEURL', $SITEURL);
